@@ -91,6 +91,7 @@ form.addEventListener('submit', (e) => {
 });
 
 ul.addEventListener('click', (e) => {
+	if(e.target.tagName != 'SPAN') return;
 	const li = e.target.parentNode;
 	const ul = li.parentNode;
 	const action = e.target.textContent;
